@@ -214,11 +214,6 @@ Course Styles Starts
     padding-bottom: 20px;
 }
 
-.cousre-info{
-    display: flex;
-    justify-content: space-between;
-}
-
 .fa-solid.filled{
     color: #FFC014;
     font-size: 15px;
@@ -322,6 +317,71 @@ Media Query starts
         box-shadow: 1px 2px 14px darkgrey;
     }
 
+}
+
+
+
+
+
+/*-------------
+    Smartphone 
+-------------*/
+
+@media only screen and (min-width: 689px) and (max-width: 1024px) {
+    
+    nav{
+        justify-content: center;
+    }
+
+    ul li a{
+        padding: 10px 15px;
+        margin: 10px;
+        border-radius: 10px;
+        border: 2px solid gray;
+    }
+
+    ul li img{
+        border: 2px solid gray;
+    }
+
+    .topbar{
+        width: 90%;
+    }
+
+    .top-player{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .player{
+        margin: auto;
+    }
+
+    .blog{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .Last-sec{
+        width: 90%;
+    }
+
+    .course-info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        margin: 50px;
+        text-align: center;
+    }
+
+    .course{
+        box-shadow: none;
+    }
+
+
+    .course:hover{
+        box-shadow: 1px 2px 14px darkgrey;
+    }
+    
 }
 
 /* -------------------------
